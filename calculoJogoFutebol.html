@@ -4,7 +4,7 @@
     function mostra(frase) {
         document.write("<h2>" + "***********************" + "<h2>");
         document.write("<h2>" + frase + "<h2>");
-        document.write("***********************");
+
     }
 
     var time = prompt("Qual o nome do time?");
@@ -14,5 +14,17 @@
     var total = (vitorias * 3) + empates;
 
     mostra("O " + time + " pontuou ao todo " + total + " pontos");
+
+    if (total > 28) {
+        mostra("O " + time + " está melhor que ano passado");
+    }
+
+    if (total < 28) {
+        mostra("O " + time + " está pior que ano passado");
+    }
+
+    else {
+        mostra("O " + time + " está igual ao ano passado");
+    }
 
 </script>
