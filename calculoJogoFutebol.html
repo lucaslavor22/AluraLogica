@@ -1,0 +1,18 @@
+<meta charset="UTF-8">
+<script>
+
+    function mostra(frase) {
+        document.write("<h2>" + "***********************" + "<h2>");
+        document.write("<h2>" + frase + "<h2>");
+        document.write("***********************");
+    }
+
+    var time = prompt("Qual o nome do time?");
+    var vitorias = parseInt(prompt("Qual o número de vitórias?"));
+    var empates = parseInt(prompt("Qual o número de empates?"));
+
+    var total = (vitorias * 3) + empates;
+
+    mostra("O " + time + " pontuou ao todo " + total + " pontos");
+
+</script>
